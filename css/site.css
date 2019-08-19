@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'L-C';
+  src: url('fonts/LibreCaslonDisplay-Regular.ttf');
+  src: url('fonts/LibreCaslonDisplay-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'M-L';
+  src: url('fonts/Montserrat-Light.otf');
+  src: url('fonts/Montserrat-Light.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'M-R';
+  src: url('fonts/Montserrat-Regular.otf');
+  src: url('fonts/Montserrat-Regular.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'M-B';
+  src: url('fonts/Montserrat-Bold.otf');
+  src: url('fonts/Montserrat-Bold.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'M-R', sans-serif;
+  margin-bottom: 100px;
+}
+
+#carouselJumbotron {
+  height: 100vh;
+  width: 100%;
+}
+.carousel-caption {
+  display: flex !important;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption h5 {
+  font-family: 'L-C', serif;
+  font-size: 8em;
+  text-transform: uppercase;
+  text-shadow:2px 2px 10px #000;
+}
+
+.carousel-caption p {
+  font-family: 'L-C', serif;
+  font-size: 2em;
+  text-shadow:2px 2px 10px #000;
+}
+
+.carousel-img-1 {
+  content: '';
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/carrusel-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-img-2 {
+  content: '';
+  height: 100vh;
+  width: auto;
+  background-image: url('../images/carrusel-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-img-3 {
+  content: '';
+  height: 100vh;
+  width: auto;
+  background-image: url('../images/carrusel-3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  z-index: 100;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nav-link {
+  color: white;
+  font-family: 'M-L', sans-serif;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #9AB5D9 !important;
+}
+
+.nav-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link i {
+  display: flex;
+  margin-right: 10px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'M-R', sans-serif;
+  text-align: center;
+  color: #03588C;
+}
+
+#conocerla, #informacion, 
+#explorarla, #visitarla {
+  margin-top: 50px;
+}
+
+.info-box i {
+  font-size: 4em;
+}
+
+.info-box h5 {
+  font-family: 'M-B', sans-serif;
+}
+
+.info-box p {
+  width: 75%;
+}
+
+.titulo-seccion h1 {
+  font-family: 'M-B', sans-serif;
+  color: #6C7336;
+  margin-bottom: 50px;
+}
+
+#informacion {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)
+    ), url('../images/mapa.png' );
+  height: 500px;
+  background-position: center center;
+  background-size: cover;    
+  background-attachment: fixed; /*magia*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#informacion p {
+  font-family: 'M-R', sans-serif;
+  font-size: 1.1em;
+  color: #03588C;
+  max-width: 700px; 
+  width: 100%;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.bg-mate-blue {
+  background-color: #9AB5D9;
+}
+
+.bg-light-blue {
+  background-color: #0477BF;
+}
+
+.bg-dark-blue {
+  background-color: #03588C;
+}
+
+.bg-mate-green {
+  background-color: #6C7336;
+}
+
+.bg-brick {
+  background-color: #D9805F;
+}
+
+.card-header .btn {
+  font-family: 'M-B', sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+.btn {
+  font-family: 'M-L';
+  font-size: 1em;
+}
+
+.btn[class*='bg-']{
+  color: white;
+}
+
+label {
+  font-family: 'M-B', sans-serif;
+  color: #03588C;
+}
+
+@media(max-width: 576px){
+  #informacion {
+    height: 100vh;
+  }
+
+  .carousel-caption h5 {
+    font-size: 4em;
+  }
+
+  .carousel-caption p {
+    font-size: 1em;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link i {
+    display: flex;
+    margin: 10px 0px;
+  }
+
+  .card-header .btn {
+    font-size: .5em;
+  }
+}
